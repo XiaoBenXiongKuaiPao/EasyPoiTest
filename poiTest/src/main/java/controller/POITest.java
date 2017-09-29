@@ -44,11 +44,6 @@ import pojo.User;
 @Controller
 public class POITest {
 
-	@RequestMapping("/poi")
-	public void poiTest(){
-		System.out.println("ssssss");
-	}
-	
 	/**
 	 * Map方式导出one
 	 * @param modelMap
