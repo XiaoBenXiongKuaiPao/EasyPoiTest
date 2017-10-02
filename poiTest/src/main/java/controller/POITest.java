@@ -66,6 +66,12 @@ public class POITest {
 	        return MapExcelConstants.JEECG_MAP_EXCEL_VIEW;
     }
 	
+	
+	public void test(){
+		
+		System.out.println("ssss");
+	}
+	
 	/**
 	 * Map方式导出two
 	 * @param modelMap
