@@ -106,7 +106,7 @@ public class POITest {
 	        List<Map<String, String>> dataResult = new ArrayList<Map<String, String>>();
 	        Map<String, String> u1 = new LinkedHashMap<String, String>();
 	        u1.put("id", "1");
-	        u1.put("name", "cyf");
+	        u1.put("xxx", "cydff");
 	        u1.put("age", "21");
 	        Map<String, String> u2 = new LinkedHashMap<String, String>();
 	        u2.put("id", "2");
@@ -127,7 +127,7 @@ public class POITest {
         List<User> list = getUsers();
         map1.put(NormalExcelConstants.CLASS, User.class);
         map1.put(NormalExcelConstants.FILE_NAME, "用户导出测试");
-        ExportParams ep = new ExportParams("旋哥", "第一个Sheet");
+        ExportParams ep = new ExportParams("sd", "第一个Sheet");
         ep.setExclusions(new String[] {});
         map1.put(NormalExcelConstants.PARAMS, ep);
         map1.put(NormalExcelConstants.DATA_LIST, list);
@@ -144,6 +144,7 @@ public class POITest {
     public void exportExcelByAnno() throws Exception {
         List<User> list = getUsers();
         Workbook workbook = ExcelExportUtil.exportExcel(new ExportParams("旋哥", "帅"), User.class, list);
+        FileOutputStream out = new FileOutputStream(new File("C:\\Users\\admin\\Desktop\\3.xls"));
         FileOutputStream out = new FileOutputStream(new File("C:\\Users\\admin\\Desktop\\3.xls"));
 		workbook.write(out);
     }
@@ -171,8 +172,7 @@ public class POITest {
         List<Product> products = new ArrayList<Product>();
         products.add(p2);
         products.add(p1);
-        u1.setProducts(products);
-        u1.setTime(new Date());
+    
 
         User u2 = new User();
         u2.setAge(23);
