@@ -97,6 +97,9 @@ public class POITest {
 	private List<Map<String, String>> getData() {
 		
 		
+		System.out.println("sdhchsiwshi");
+		
+		
 		System.out.println("swss");
 		System.out.println("swss");
 		
@@ -150,6 +153,7 @@ public class POITest {
         Product p2 = new Product();
         p1.setId(1);
         p1.setName("apple");
+        System.out.println("shduigcuios");
         p1.setPrice(10);
         p1.setTime(new Date());
 
@@ -207,6 +211,9 @@ public class POITest {
         resp.addHeader("Content-Disposition", "attachment;filename=" + filedisplay);
 
         try {
+        	int i =3;
+        	
+        	i=i+1;
             OutputStream out = resp.getOutputStream();
             workbook.write(out);
             out.close();
