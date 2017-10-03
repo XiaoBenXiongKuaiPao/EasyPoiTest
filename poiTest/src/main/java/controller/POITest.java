@@ -79,7 +79,7 @@ public class POITest {
 	 * @return
 	 */
 	@RequestMapping("/MapExportExcelByMap")
-    public void exportExcelByMap() {
+    public void exportExcwwerwweelByMap() {
 		try {
 	        List<ExcelExportEntity> entityList = new ArrayList<ExcelExportEntity>();
 	        entityList.add(new ExcelExportEntity("用户ID", "id", 35));
