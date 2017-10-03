@@ -145,7 +145,7 @@ public class POITest {
         List<User> list = getUsers();
         Workbook workbook = ExcelExportUtil.exportExcel(new ExportParams("旋哥", "帅"), User.class, list);
         FileOutputStream out = new FileOutputStream(new File("C:\\Users\\admin\\Desktop\\3.xls"));
-        FileOutputStream out = new FileOutputStream(new File("C:\\Users\\admin\\Desktop\\3.xls"));
+        FileOutputStream out23 = new FileOutputStream(new File("C:\\Users\\admin\\Desktop\\3.xls"));
 		workbook.write(out);
     }
 
@@ -258,6 +258,7 @@ public class POITest {
              params.setTitleRows(1);
              params.setHeadRows(2);
              params.setNeedSave(true);
+            int sjhishfioshaishish = 2;
 			FileInputStream inputstream = new FileInputStream(new File("C:\\Users\\admin\\Desktop\\3.xls"));
 			List<User> importExcel = ExcelImportUtil.importExcel(inputstream , User.class,params);
 			for (User user : importExcel) {
