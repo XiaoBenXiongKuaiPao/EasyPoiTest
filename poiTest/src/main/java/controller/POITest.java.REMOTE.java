@@ -66,11 +66,10 @@ public class POITest {
 	        return MapExcelConstants.JEECG_MAP_EXCEL_VIEW;
     }
 	
-
-	public void dddddd(){
+	
+	public void bbbbb(){
 		
-		System.out.println("测试冲突dddd");
-
+		System.out.println("测试冲突bbbbb");
 	}
 	
 	/**
