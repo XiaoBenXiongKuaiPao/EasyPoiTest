@@ -84,6 +84,7 @@ public class POITest {
 	        List<ExcelExportEntity> entityList = new ArrayList<ExcelExportEntity>();
 	        entityList.add(new ExcelExportEntity("用户ID", "id", 35));
 	        entityList.add(new ExcelExportEntity("用户名", "name", 15));
+	        entityList.add(new ExcelExportEntity("用户名", "name", 15));
 	        entityList.add(new ExcelExportEntity("用户年龄", "age", 15));
 	        List<Map<String, String>> dataResult = getData();
 	        Workbook workbook = ExcelExportUtil.exportExcel(new ExportParams("员工通讯", "通讯"), entityList, dataResult);
@@ -107,7 +108,7 @@ public class POITest {
 	        Map<String, String> u1 = new LinkedHashMap<String, String>();
 	        u1.put("id", "1");
 	        u1.put("xxx", "cydff");
-	        u1.put("age", "21");
+	        u1.put("agesdfsfs", "21");
 	        Map<String, String> u2 = new LinkedHashMap<String, String>();
 	        u2.put("id", "2");
 	        u2.put("name", "cy");
@@ -146,6 +147,7 @@ public class POITest {
         Workbook workbook = ExcelExportUtil.exportExcel(new ExportParams("旋哥", "帅"), User.class, list);
         FileOutputStream out = new FileOutputStream(new File("C:\\Users\\admin\\Desktop\\3.xls"));
         FileOutputStream out23 = new FileOutputStream(new File("C:\\Users\\admin\\Desktop\\3.xls"));
+
 		workbook.write(out);
     }
 
