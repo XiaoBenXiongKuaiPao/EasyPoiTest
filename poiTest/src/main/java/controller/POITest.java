@@ -67,9 +67,9 @@ public class POITest {
     }
 	
 
-	public void dddddd(){
+	public void two(){
 		
-		System.out.println("测试冲突dddd");
+		System.out.println("测试冲突two");
 
 	}
 	
